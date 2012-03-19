@@ -1,3 +1,4 @@
+window._XMLHttpRequest = XMLHttpRequest;
 window.XMLHttpRequest = function () {
 	this.onreadystatechange = function () {};
 	this.readyState = 0 /* UNSENT */;

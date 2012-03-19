@@ -44,7 +44,7 @@ window.XMLHttpRequest.prototype = {
 		};
 
 		if (self._async) {
-			setTimeout(done, 10);
+			setTimeout(done, this.wait || 10);
 		} else {
 			done();
 		}
